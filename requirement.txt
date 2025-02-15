@@ -1,0 +1,31 @@
+// npm create vite@latest
+react-router-dom
+tailwindcss @tailwindcssvite
+axios
+react-player - tape player of series
+react-router-dom 
+react-infinite-scroll-component - to infinite scroll like instagram, youtube
+@reduxjs/toolkit react-redux
+
+
+The birth of Transformer model
+
+in 2017 at vaswani et al
+you going one point to another with collecting some thing
+this in not a solution
+more models
+transformers, gans, variationanl autoencoders, diffusion models
+olama
+
+basically it just preict the next word
+llm has contest window
+big innovation, bigger investments
+adapt or get replaced 
+settings => pages => deploy 
+
+
+
+
+
+
+

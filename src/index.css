@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* Remove the universal selector and be more specific */
+body {
+  color: #E0FFFF;
+  background-color: #181827;
+}
+
+/* Add specific text color classes */
+.text-primary {
+  color: #E0FFFF !important;
+}
+
+.text-accent {
+  color: #62629f !important;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  /* background-color: red; */
+}
+::-webkit-scrollbar-thumb{
+  background: #272756;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #62629f;
+  border-radius:10px
+}
+
+/* Add specific styles for card text */
+.card-text {
+  color: #E0FFFF;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
+}
+
+.language-text {
+  color: #00A8E8; /* Electric Blue */
+}
+
+.rating-text {
+  color: #FFD700; /* Gold */
+}
+
+/* Dark Mode Theme (Best for Movies & Streaming)
+
+Primary: Black (#000000) or Dark Gray (#1C1C1C)
+Accent: Red (#E50914) or Gold (#FFD700)
+Text: White (#FFFFFF) or Light Gray (#B3B3B3)
+Why? Gives a premium, Netflix-like feel and enhances visuals.
+Neon Cyberpunk Theme (Futuristic & Eye-Catching)
+
+  // -Primary: Dark Purple (#1A1A2E) or Deep Blue (#0F3460)
+Accent: Neon Pink (#E94560) or Electric Blue (#00A8E8)
+ // -Text: White or Light Cyan (#E0FFFF)
+Why? Creates a modern, futuristic vibe, great for action/sci-fi content.
+Classic Red & Gold (Hollywood Style)
+
+Primary: Deep Red (#A00000) or Burgundy (#800020)
+Accent: Gold (#FFD700) or Champagne (#F7E7CE)
+Text: Black or White
+Why? Feels premium, like an Oscar night or old-school cinema.
+Minimalist Light Theme (Clean & Professional)
+
+Primary: White (#FFFFFF) or Light Gray (#F5F5F5)
+Accent: Deep Blue (#007BFF) or Red (#FF3B3B)
+Text: Black or Dark Gray (#333333)
+Why? Feels fresh and modern, great for a broad audience. */
+
+/* FFF2F2
+A9B5DF
+7886C7
+2D336B */
