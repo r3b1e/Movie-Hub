@@ -1,8 +1,15 @@
-# React + Vite
+Movie Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+live here - https://movie-hub-eb4e4.web.app/home
 
-Currently, two official plugins are available:
+Features
+- Search movies by title, genre, etc
+- Filter movies
+- View detailed movie information
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used
+- React
+- API - https://api.themoviedb.org/3
+- Read requirements.txt for tech stack like CSS frameworks, libraries, etc.]
+- Firebase for Authentication
+- Gemini api for Reccomendation
