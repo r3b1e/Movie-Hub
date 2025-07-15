@@ -3,7 +3,7 @@ import Loader from "./Loader"
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
-    const features = [["Trending", "ri-fire-fill", "trending"], ["Popular", "ri-bard-fill", "populars"], ["Movies", "ri-film-fill", "trending"], ["Tv shows", "ri-slideshow-3-fill", "trending"], ["People", "ri-user-2-fill", "trending"]]
+    const features = [["Trending", "ri-fire-fill", "trending"], ["Popular", "ri-bard-fill", "populars"], ["Movies", "ri-film-fill", "movies"], ["Tv shows", "ri-slideshow-3-fill", "trending"], ["People", "ri-user-2-fill", "people"]]
     const info = [["About", "ri-information-2-fill", "trending"], ["Contact", "ri-phone-fill", "trending"]]
 
     

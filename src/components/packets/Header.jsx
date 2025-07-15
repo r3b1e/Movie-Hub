@@ -56,7 +56,7 @@ function Header({ data }) {
                         ease: "easeInOut"
                     }}
                     style={{
-                        backgroundImage: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7), rgba(0,0,0,.9)), url(https://image.tmdb.org/t/p/w500/${movies[currentIndex].backdrop_path})`,
+                        backgroundImage: `linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,.4), rgba(0,0,0,.1)), url(https://image.tmdb.org/t/p/w500/${movies[currentIndex].backdrop_path})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                     }}
@@ -79,7 +79,7 @@ function Header({ data }) {
 
                     <div className="absolute bottom-10 left-10 z-10">
                         <h1 className="text-4xl font-bold mb-4">
-                            {movies[currentIndex].original_title}
+                            {movies[currentIndex].original_title || movies[currentIndex].name}
                         </h1>
                         <p className="max-w-2xl">{movies[currentIndex].overview}</p>
                     </div>

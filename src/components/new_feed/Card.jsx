@@ -1,8 +1,16 @@
 import React from "react";
 import unknown from "../../assets/Unknown_person.jpg"
+import { useNavigate } from "react-router-dom";
 function Card({ data }) {
+  const navigate = useNavigate();
+  const handleClickIndivisual = (val) => {
+    console.log(val.id)
+    navigate(`/watch/${val.id}`);
+  }
+
   return (
-    <div className="h-60 w-40 drop-shadow-xl rounded-md relative overflow-hidden flex-shrink-0">
+    <div className="cursor-pointer h-60 w-40 drop-shadow-xl rounded-md relative overflow-hidden flex-shrink-0 hover:scale-95 transition-transform duration-300 ease-in-out"
+        onClick={() => handleClickIndivisual(data)}>
       <img
         className="h-full w-full object-cover object-top"
          src ={(data.poster_path || data.backdrop_path) ? `https://image.tmdb.org/t/p/w500${data.poster_path || data.backdrop_path}` : unknown}

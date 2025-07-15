@@ -4,6 +4,7 @@ import Loader from "../packets/Loader";
 import Cards from "./Cards";
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { useNavigate } from 'react-router-dom';
+import Topnav from '../packets/Topnav';
 
 function Trend() {
     const [movies, setMovies] = useState([]);
@@ -45,7 +46,8 @@ function Trend() {
 
     return movies.length ? (
         <div className='bg-[#181827] h-fit w-full p-1'>
-            <h2 className='text-2xl font-semibold mx-5 my-10'><span><i onClick={getBack} className="ri-arrow-left-line cursor-pointer hover:bg-sky-700"></i> </span>Trending Now</h2>
+            <Topnav />
+            <h2 className='text-2xl font-semibold mx-5'><span><i onClick={getBack} className="ri-arrow-left-line cursor-pointer hover:bg-sky-700"></i> </span>Trending Now</h2>
             <InfiniteScroll 
                 dataLength={movies.length}
                 next={trendingMovies}

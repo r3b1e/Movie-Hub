@@ -4,6 +4,7 @@ import Loader from "../packets/Loader";
 import { useNavigate } from "react-router-dom";
 import Cards from "./Cards";
 import InfiniteScroll from "react-infinite-scroll-component";
+import Topnav from "../packets/Topnav";
 function Populars(){
     const [popMovies, setPopMovies] = useState([])
     const [page, setPage] = useState(1)
@@ -41,7 +42,8 @@ function Populars(){
     }
     return popMovies.length ? (
         <div className='bg-[#181827] h-fit w-full p-1'>
-            <h2 className='text-2xl font-semibold mx-5 my-10'><span><i onClick={getBack} className="ri-arrow-left-line cursor-pointer hover:bg-sky-700"></i> </span>Popular Now</h2>
+            <Topnav />
+            <h2 className='text-2xl font-semibold mx-5'><span><i onClick={getBack} className="ri-arrow-left-line cursor-pointer hover:bg-sky-700"></i> </span>Popular Movies</h2>
             <Cards data={popMovies} />
             <InfiniteScroll
             dataLength={popMovies.length}
