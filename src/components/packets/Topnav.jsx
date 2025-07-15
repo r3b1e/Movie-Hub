@@ -57,7 +57,7 @@ function Topnav() {
         {searchText.map((s, i) => (
           <div key={i} className="hover:bg-[rgba(2,119,127,1)] w-full h-auto min-h-20 border-2 rounded-md py-2 px-5 m-1 flex justify-start gap-10 items-center duration-200 ease-out">
             <img
-                      src ={(data.poster_path || data.backdrop_path) ? `https://image.tmdb.org/t/p/w500${data.poster_path || data.backdrop_path}` : unknown}
+                      src ={(s.poster_path || s.backdrop_path) ? `https://image.tmdb.org/t/p/w500${s.poster_path || s.backdrop_path}` : unknown}
              
               alt={s.title}
               className="w-20 h-20 object-cover rounded shadow=lg drop-shadow-lg"
